@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="فروش محصولات مراقبت از پوست و لوازم روتین پوستی">
+  <title>SkinCare | فروشگاه مراقبت از پوست</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">🌿 SkinCare</a>
+    <nav>
+      <a href="#home" data-fa="خانه" data-en="Home">خانه</a>
+      <a href="#products" data-fa="محصولات" data-en="Products">محصولات</a>
+      <a href="#about" data-fa="درباره ما" data-en="About Us">درباره ما</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="languageBtn" class="lang-btn">EN</button>
+      <button id="cartBtn" class="cart-btn">🛍️ <span id="cartCount">۰</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow" data-fa="زیبایی از مراقبت شروع می‌شود" data-en="Beauty begins with care">زیبایی از مراقبت شروع می‌شود</span>
+        <h1 data-fa="پوستی سالم، زیبایی طبیعی تو ✨" data-en="Healthy Skin, Your Natural Glow ✨">پوستی سالم، زیبایی طبیعی تو ✨</h1>
+        <p data-fa="با بهترین محصولات مراقبت از پوست، هر روز به زیبایی طبیعی خودت نزدیک‌تر شو." data-en="Discover your natural beauty with our carefully selected skincare essentials.">با بهترین محصولات مراقبت از پوست، هر روز به زیبایی طبیعی خودت نزدیک‌تر شو.</p>
+        <a href="#products" class="primary-btn" data-fa="مشاهده محصولات ←" data-en="Shop Now →">مشاهده محصولات ←</a>
+        <div class="hero-note">♡ <span data-fa="مراقبت روزانه، عشق به خود" data-en="Daily care, self love">مراقبت روزانه، عشق به خود</span></div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1000&q=85" alt="محصولات مراقبت از پوست">
+        <div class="floating-card">🌸 <span data-fa="زیبایی طبیعی" data-en="Natural Beauty">زیبایی طبیعی</span></div>
+      </div>
+    </section>
+
+    <section class="categories section">
+      <h2 data-fa="دنیای مراقبت از پوست" data-en="Explore Categories">دنیای مراقبت از پوست</h2>
+      <p class="section-subtitle" data-fa="همه چیز برای روتین پوستی تو" data-en="Everything for your skincare routine">همه چیز برای روتین پوستی تو</p>
+      <div class="category-grid">
+        <a href="#products" class="category-card"><span>🧴</span><b data-fa="شوینده" data-en="Cleanser">شوینده</b></a>
+        <a href="#products" class="category-card"><span>💧</span><b data-fa="سرم پوست" data-en="Serums">سرم پوست</b></a>
+        <a href="#products" class="category-card"><span>🌿</span><b data-fa="مرطوب‌کننده" data-en="Moisturizers">مرطوب‌کننده</b></a>
+        <a href="#products" class="category-card"><span>☀️</span><b data-fa="ضدآفتاب" data-en="Sunscreen">ضدآفتاب</b></a>
+      </div>
+    </section>
+
+    <section class="products section" id="products">
+      <div class="section-heading">
+        <div>
+          <h2 data-fa="محصولات محبوب" data-en="Popular Products">محصولات محبوب</h2>
+          <p class="section-subtitle" data-fa="انتخابی برای درخشش پوست تو" data-en="Your essentials for glowing skin">انتخابی برای درخشش پوست تو</p>
+        </div>
+        <label class="search-box">
+          <span>⌕</span>
+          <input type="search" id="searchInput" placeholder="جست‌وجوی محصول..." data-fa-placeholder="جست‌وجوی محصول..." data-en-placeholder="Search products...">
+        </label>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p id="emptyMessage" class="empty-message" hidden>محصولی پیدا نشد.</p>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-icon">🌱</div>
+      <div>
+        <h2 data-fa="چرا SkinCare؟" data-en="Why SkinCare?">چرا SkinCare؟</h2>
+        <p data-fa="زیبایی طبیعی با انتخاب آگاهانه محصولات مراقبت از پوست آغاز می‌شود." data-en="Natural beauty starts with thoughtful skincare choices.">زیبایی طبیعی با انتخاب آگاهانه محصولات مراقبت از پوست آغاز می‌شود.</p>
+      </div>
+      <div class="benefits">
+        <span>♡ <small data-fa="انتخاب دقیق محصولات" data-en="Curated products">انتخاب دقیق محصولات</small></span>
+        <span>🚚 <small data-fa="ارسال آسان" data-en="Easy delivery">ارسال آسان</small></span>
+        <span>🌿 <small data-fa="توجه به سلامت پوست" data-en="Skin-conscious care">توجه به سلامت پوست</small></span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#home" class="logo">🌿 SkinCare</a>
+    <p data-fa="زیبایی تو، با مراقبت آغاز می‌شود." data-en="Your beauty begins with care.">زیبایی تو، با مراقبت آغاز می‌شود.</p>
+    <small>© <span id="year"></span> SkinCare</small>
+  </footer>
+
+  <dialog id="cartDialog" class="cart-dialog">
+    <div class="cart-header">
+      <h2 data-fa="سبد خرید تو" data-en="Your Shopping Cart">سبد خرید تو</h2>
+      <button id="closeCart" aria-label="بستن">✕</button>
+    </div>
+    <div id="cartItems"></div>
+    <p class="cart-total"><span data-fa="مجموع" data-en="Total">مجموع</span>: <strong id="cartTotal">۰ تومان</strong></p>
+    <button id="checkoutBtn" class="primary-btn checkout-btn" data-fa="ثبت سفارش" data-en="Place Order">ثبت سفارش</button>
+    <p class="cart-hint" data-fa="این نسخه نمایشی است و پرداخت آنلاین ندارد." data-en="Demo store: online payment is not enabled.">این نسخه نمایشی است و پرداخت آنلاین ندارد.</p>
+  </dialog>
+
+  <div id="toast" class="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
